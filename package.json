@@ -1,0 +1,24 @@
+{
+  "name": "draw-dice-api",
+  "version": "0.0.1",
+  "description": "API for draw-dice",
+  "main": "index.js",
+  "scripts": {
+    "start": "SET NODE_ENV=development & node src/app.js",
+    "start-debug": "SET NODE_ENV=development & SET DEBUG=* & node src/app.js",
+    "serve": "NODE_ENV=production node src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "dice",
+    "api"
+  ],
+  "author": "Marcin Berger",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+}

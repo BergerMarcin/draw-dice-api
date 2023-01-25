@@ -1,0 +1,18 @@
+# Build directory
+build/
+
+# Dependency directories
+node_modules/
+npm-shrinkwrap.json
+
+# Credentials files
+.env
+
+# Output of 'npm pack'
+*.tgz
+
+# Logs
+logs
+*.log
+npm-debug.log*
+report.*.json
