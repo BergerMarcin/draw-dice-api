@@ -6,7 +6,9 @@
   "scripts": {
     "start": "SET NODE_ENV=development & node src/app.js",
     "start-debug": "SET NODE_ENV=development & SET DEBUG=* & node src/app.js",
-    "serve": "NODE_ENV=production node src/app.js",
+    "serve": "SET NODE_ENV=production node src/app.js",
+    "lint": "eslint \"**/*.js\" --ignore-pattern node_modules",
+    "lint-fix": "eslint \"**/*.js\" --ignore-pattern node_modules --fix",
     "prettier": "prettier --write .",
     "prettier-check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -24,6 +26,7 @@
     "express": "^4.18.2"
   },
   "devDependencies": {
+    "eslint": "^8.32.0",
     "prettier": "^2.8.3"
   }
 }

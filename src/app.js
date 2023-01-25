@@ -49,6 +49,7 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(port, () => {
+  debugMsg("log", `Environment: ${process.env.NODE_ENV}`);
   debugMsg("log", `Example app listening on port ${port}`);
   debugMsg("log", path.resolve(process.cwd(), "public"));
 });
