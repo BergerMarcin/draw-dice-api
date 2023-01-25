@@ -1,4 +1,4 @@
-const debug = require('debug')('dice-api');
+const debug = require("debug")("dice-api");
 
 let debugMsg;
 if (process.env.DEBUG) {
@@ -13,7 +13,7 @@ if (process.env.DEBUG) {
       default:
         return console.log(...args);
     }
-  }
+  };
 }
 
 module.exports = debugMsg;
