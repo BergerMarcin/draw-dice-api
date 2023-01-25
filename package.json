@@ -7,6 +7,8 @@
     "start": "SET NODE_ENV=development & node src/app.js",
     "start-debug": "SET NODE_ENV=development & SET DEBUG=* & node src/app.js",
     "serve": "NODE_ENV=production node src/app.js",
+    "prettier": "prettier --write .",
+    "prettier-check": "prettier --check .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

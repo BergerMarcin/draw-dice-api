@@ -23,7 +23,7 @@ app.use(
   cors({
     credentials: true,
     origin: [process.env.WHITE_LIST.split(", ")],
-  })
+  }),
 );
 
 // test
